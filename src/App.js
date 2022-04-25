@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./pages/header";
+import 'antd/dist/antd.css'
+import Main from "./pages/main";
+import { Route,Routes,Link } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: 'center' }}>
+        <div style={{ height: '10vh', boxShadow: '1px 1px 1px gray'}}>
+            <Header />
+        </div>
+        {/*<div style={{ padding: '10vw' }}>*/}
+        {/*    */}
+        {/*</div>*/}
+        <Routes>
+            <Route path="/" element={Main} />
+            <Route path="/main" element={Main} />
+        </Routes>
     </div>
   );
 }
