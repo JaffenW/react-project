@@ -1,20 +1,20 @@
 import Header from "./pages/header";
 import 'antd/dist/antd.css'
-import Main from "./pages/main";
-import { Route,Routes,Link } from "react-router-dom"
+import Default from "./pages/default";
+import About from "./pages/about";
+import Profiler from "./pages/profiler";
+import { Route,Routes } from "react-router-dom"
 
 function App() {
   return (
     <div style={{ textAlign: 'center' }}>
         <div style={{ height: '10vh', boxShadow: '1px 1px 1px gray'}}>
-            <Header />
+            <Header props/>
         </div>
-        {/*<div style={{ padding: '10vw' }}>*/}
-        {/*    */}
-        {/*</div>*/}
         <Routes>
-            <Route path="/" element={Main} />
-            <Route path="/main" element={Main} />
+            <Route path="/" element={Default} />
+            <Route path="/about" element={About} />
+            <Route path="/profiler" element={Profiler} />
         </Routes>
     </div>
   );
