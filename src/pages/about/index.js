@@ -12,7 +12,7 @@ export default class About extends React.Component{
     render() {
         return (
             <div>
-                this is main
+                this is about
             </div>
         )
     }

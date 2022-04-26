@@ -3,7 +3,7 @@ import 'antd/dist/antd.css'
 import Default from "./pages/default";
 import About from "./pages/about";
 import Profiler from "./pages/profiler";
-import { Route,Routes } from "react-router-dom"
+import { Route, Routes, withRouter } from "react-router-dom"
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
             <Header props/>
         </div>
         <Routes>
-            <Route path="/" element={Default} />
-            <Route path="/about" element={About} />
-            <Route path="/profiler" element={Profiler} />
+            <Route path="/" element={<Default/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/profiler" element={<Profiler/>} />
         </Routes>
     </div>
   );

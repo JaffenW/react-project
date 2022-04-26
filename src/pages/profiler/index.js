@@ -12,7 +12,7 @@ export default class Profiler extends React.Component{
     render() {
         return (
             <div>
-                this is main
+                this is profiler
             </div>
         )
     }

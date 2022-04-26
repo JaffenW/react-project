@@ -1,18 +1,22 @@
 import logo from '../logo.svg';
 import './header.css'
 import { Menu } from 'antd';
+import { useNavigate } from 'react-router-dom'
 
 function Header(props) {
+    const navigate = useNavigate()
+
     const selectDefault = () => {
-        this.props.history.push('/default')
+        navigate('/default')
+        // this.props.history.push('/default')
     }
 
     const selectAbout = () => {
-        props.history.push('/about')
+        navigate('/about')
     }
 
     const selectProfiler = () => {
-        props.history.push('/profiler')
+        navigate('/profiler')
     }
 
     return (

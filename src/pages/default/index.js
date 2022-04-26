@@ -12,7 +12,7 @@ export default class Index extends React.Component{
     render() {
         return (
             <div>
-                this is main
+                this is default
             </div>
         )
     }
