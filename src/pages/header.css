@@ -4,8 +4,22 @@
     align-items: center;
     justify-content: center;
     color: white;
+    padding-left: 8vw;
 }
 
 .App-link {
     color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 2s linear;
 }

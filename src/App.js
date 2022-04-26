@@ -5,8 +5,8 @@ import RouterComponent from "./router"
 function App() {
   return (
     <div style={{ textAlign: 'center' }}>
-        <div style={{ height: '10vh', boxShadow: '1px 1px 1px gray'}}>
-            <Header props/>
+        <div style={{ height: '8vh', boxShadow: '1px 1px 1px gray'}}>
+            <Header/>
         </div>
         <RouterComponent/>
     </div>
