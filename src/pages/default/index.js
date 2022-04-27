@@ -64,9 +64,18 @@ export default class Index extends React.Component{
   }
 
   componentDidMount() {
-    axios.get('mock/user/login.json').then((res) => {
-      console.log('111', res)
+    // axios.get('mock/user/login.json').then((res) => {
+    //   console.log('111', res)
+    // })
+    axios.get('api/queryMall').then((res) => {
+      console.log('1111', res)
     })
+
+    setInterval(() => {
+      axios.get('lzh/sb').then((res) => {
+        console.log('1111', res)
+      })
+    }, 50)
   }
 
   render() {
