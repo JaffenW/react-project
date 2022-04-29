@@ -1,5 +1,5 @@
 import Default from '../pages/default'
-import About from '../pages/about'
+import Management from '../pages/management'
 import Profiler from '../pages/profiler'
 
 const routerConfig = [
@@ -8,15 +8,15 @@ const routerConfig = [
         element: <Default />
     },
     {
-        path: '/default',
+        path: 'default',
         element: <Default />
     },
     {
-        path: '/about',
-        element: <About/>
+        path: 'management',
+        element: <Management/>
     },
     {
-        path: '/profiler',
+        path: 'profiler',
         element: <Profiler/>
     }
 ]

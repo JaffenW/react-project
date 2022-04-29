@@ -1,6 +1,5 @@
-import {Route} from "react-router-dom";
+import {Route,Routes} from "react-router-dom";
 import routerConfig from "./router-config";
-import { Routes } from "react-router-dom"
 
 function RouterComponent() {
     return (

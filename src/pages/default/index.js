@@ -87,7 +87,7 @@ export default class Index extends React.Component{
               imgList && imgList.map(item => {
                 return (
                     <div key={item.key}>
-                      <Image src={item.url} />
+                      <Image src={item.url} alt="" />
                     </div>
                 )
               })
@@ -98,7 +98,7 @@ export default class Index extends React.Component{
               goods && goods.length > 0 ? goods.map(item => {
                 return (
                     <Col key={item.goodId} span={6}>
-                      <Card cover={<img src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>}>
+                      <Card cover={<img src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" alt='商品图片'/>}>
                         <Meta title={`${item.goodName}/$${item.price}`} description={item.description}/>
                       </Card>
                     </Col>

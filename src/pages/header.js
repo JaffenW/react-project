@@ -13,18 +13,6 @@ function Header(props) {
         console.log(e)
     }
 
-    // const selectDefault = () => {
-    //     navigate('/default')
-    // }
-    //
-    // const selectAbout = () => {
-    //     navigate('/about')
-    // }
-    //
-    // const selectProfiler = () => {
-    //     navigate('/profiler')
-    // }
-
     const menu = <Menu items={[
         {
             label: '我的',
@@ -51,8 +39,8 @@ function Header(props) {
                     <Menu.Item key="/default">
                         默认
                     </Menu.Item>
-                    <Menu.Item key="/about">
-                        关于
+                    <Menu.Item key="/management">
+                        管理
                     </Menu.Item>
                     <Menu.Item key="/profiler">
                         我的
