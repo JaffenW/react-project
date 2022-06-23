@@ -1,6 +1,7 @@
 import Default from '../pages/default'
 import Management from '../pages/management'
 import Profiler from '../pages/profiler'
+import Test from '../pages/test'
 
 const routerConfig = [
     {
@@ -18,6 +19,10 @@ const routerConfig = [
     {
         path: 'profiler',
         element: <Profiler/>
+    },
+    {
+        path: 'test',
+        element: <Test/>
     }
 ]
 

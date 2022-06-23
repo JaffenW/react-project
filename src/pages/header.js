@@ -45,6 +45,9 @@ function Header(props) {
                     <Menu.Item key="/profiler">
                         我的
                     </Menu.Item>
+                    <Menu.Item key="/test">
+                        测试
+                    </Menu.Item>
                 </Menu>
             </div>
             <Dropdown overlay={menu} >
